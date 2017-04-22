@@ -34,9 +34,31 @@
 		}
 	</style>
 	-->
-	<link rel="stylesheet" href="index_files/tablet-settings.css" type="text/css">
+	<!--<link rel="stylesheet" href="index_files/tablet-settings.css" type="text/css">-->
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<!--
+		<link rel="stylesheet" href="index_files/main.css" type="text/css">
+		<link rel="stylesheet" href="index_files/jQuery.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$( function() {
+			$( ".widget input[type=submit], .widget a, .widget button" ).button();
+			$( "button, input, a" ).click( function( event ) {
+			  event.preventDefault();
+			} );
+		} );
+		</script>
+		-->
+		<link rel="stylesheet" href="index_files/main.css" type="text/css">
+		<script>
+		$("#test").click(function(){this.toggleClass("pressed");
+		});
+		</script>
 </head>
 <body>
+<!--
   <div class="navigation">
   	<div id="logo">
         <a href="http://lloydsbarbershop.com/">
@@ -56,5 +78,23 @@
       </div>
     </div>
   </div>
+
+  <ul>
+    <li>New Appointment</li>
+    <li>
+      <a href="http://lloydsbarbershop.com/">
+        <img src="index_files/logo.png"/>
+	  </a>
+	</li>
+	<li>End Appointment</li>
+  </ul>
+  -->
+	<div class="neckline-style-div">
+		<button id = "test" class = "neckline-style">Square</button>
+		<button id = "test" class = "neckline-style">Round</button>
+		<button id = "test" class = "neckline-style">Fade</button>
+	</div>
+ 
+ 
 </body>
 </html> 
