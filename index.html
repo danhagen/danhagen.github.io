@@ -35,8 +35,8 @@
 	</style>
 	-->
 	<!--<link rel="stylesheet" href="index_files/tablet-settings.css" type="text/css">-->
-		<meta charset="utf-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   		<!--
 		<link rel="stylesheet" href="index_files/main.css" type="text/css">
 		<link rel="stylesheet" href="index_files/jQuery.css">
@@ -51,13 +51,20 @@
 		} );
 		</script>
 		-->
-		<link rel="stylesheet" href="index_files/main.css" type="text/css">
-		<script>
-		$("#test").click(function(){this.toggleClass("pressed");
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="index_files/main.css" type="text/css">
+	<script>
+	$(document).ready(function(){
+		$(".sticky-button").click(function(){
+			$(this).toggleClass("pressed");
 		});
-		</script>
+	});
+	</script>	
+	
 </head>
 <body>
+
 <!--
   <div class="navigation">
   	<div id="logo">
@@ -89,12 +96,30 @@
 	<li>End Appointment</li>
   </ul>
   -->
-	<div class="neckline-style-div">
-		<button id = "test" class = "neckline-style">Square</button>
-		<button id = "test" class = "neckline-style">Round</button>
-		<button id = "test" class = "neckline-style">Fade</button>
+  	<div id="menu-bar">
+  		<div id="menu">
+			<ul id=#nav>
+				<li>
+					<a>New<br/>Appointment</a>
+				</li>
+				<li>
+					<a id = "logo" href="http://lloydsbarbershop.com/">
+						<img src="index_files/logo.png"/>
+					</a>
+				</li>
+				<li>
+					<a>End<br/>Appointment</a>
+				</li>
+			</ul>
+		</div>
 	</div>
- 
+	<div class="background">
+		<div class="neckline-style-div">
+			<button class = "sticky-button neckline-style">Square</button>
+			<button class = "sticky-button neckline-style">Round</button>
+			<button class = "sticky-button neckline-style">Fade</button>
+		</div>
+ 	</div>
  
 </body>
 </html> 
