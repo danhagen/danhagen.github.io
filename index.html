@@ -41,7 +41,7 @@
 		var a = ["13","12","11","10","9","8","7","6","5","4","3","2","1"]
 		$.each(a,function(i,val){
 		$(document).ready(function(){
-				$("a.fluidbox__instance-"+val).click(function(){	if ($("#figure"+val).hasClass("no-hover")){
+				$("a.fluidbox__instance-"+(1-(parseInt(val,10)-a.length)).toString()).click(function(){	if ($("#figure"+val).hasClass("no-hover")){
 						$("#figure"+val).removeClass("no-hover");
 					} else {
 						$("#figure"+val).addClass("no-hover");
