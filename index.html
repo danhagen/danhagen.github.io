@@ -52,8 +52,8 @@
 
 	$.each(a,function(i,val){
 		$(document).ready(function(){
-				$("div.banner"+(1-(parseInt(val,10)-a.length)).toString()).click(function(){
-					$("a.fluidbox__instance-"+(1-(parseInt(val,10)-a.length)).toString()).click();
+				$("div.banner").click(function(){
+					$("a.fluidbox__instance-").click();
 				});
 		});
 	});
