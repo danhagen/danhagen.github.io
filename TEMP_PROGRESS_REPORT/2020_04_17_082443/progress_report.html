@@ -1,0 +1,49 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+.markdown-body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+}
+
+@media (max-width: 767px) {
+.markdown-body {
+padding: 15px;
+}
+}
+</style>
+<article class="markdown-body">
+<h1 id="readme.md-for-figures-created-20200415-at-1756.12">README.md for Figures Created 2020/04/15 at 17:56.12</h1>
+<h2 id="notes">Notes</h2>
+<p>Only saving the last three periods of the joint angle sinusoid as the states converge on a periodic solution and the ANN will therefore have periodic performance (<em>Realistically, we could just save the <em>last</em> period, but this gives us some cushion</em>).</p>
+<h2 id="parameters">Parameters</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>params <span class="op">=</span> {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>   <span class="st">&#39;stiffnessRange&#39;</span> : [<span class="dv">20</span>, <span class="dv">100</span>],</span>
+<span id="cb1-3"><a href="#cb1-3"></a>   <span class="st">&#39;frequency&#39;</span> : <span class="dv">1</span>,</span>
+<span id="cb1-4"><a href="#cb1-4"></a>   <span class="st">&#39;angleRange&#39;</span> : [<span class="fl">2.356194490192345</span>, <span class="fl">3.9269908169872414</span>],</span>
+<span id="cb1-5"><a href="#cb1-5"></a>   <span class="st">&#39;delay&#39;</span> : <span class="fl">0.3</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>}</span></code></pre></div>
+<h2 id="figures">Figures</h2>
+<h4 id="states_01-01.png">states_01-01.png</h4>
+<p align="center">
+<img width="500" src="states_01-01.png">
+</p>
+<!-- ![](states_01-01.png)
+THIS IS THE MARKDOWN VERSION -->
+<h4 id="states_01-02.png">states_01-02.png</h4>
+<p align="center">
+<img width="500" src="states_01-02.png">
+</p>
+<h4 id="states_01-03.png">states_01-03.png</h4>
+<p align="center">
+<img width="500" src="states_01-03.png">
+</p>
+<h4 id="states_01-04.png">states_01-04.png</h4>
+<p align="center">
+<img width="500" src="states_01-04.png">
+</p>
+
+</article>
