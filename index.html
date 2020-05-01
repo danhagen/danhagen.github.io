@@ -40,7 +40,7 @@
 		});
 	</script> -->
 	<script>
-		var a = ["13","12","11","10","9","8","7","6","5","4","3","2","1"]
+		var a = ["14","13","12","11","10","9","8","7","6","5","4","3","2","1"]
 		$.each(a,function(i,val){
 		$(document).ready(function(){
 				$("a.fluidbox__instance-"+(1-(parseInt(val,10)-a.length)).toString()).click(function(){	if ($("#figure"+val).hasClass("no-hover")){
@@ -153,7 +153,9 @@
 						<a href="#" data-filter=".kinematics"><b>KINEMATICS</b></a>
 						<a href="#" data-filter=".dynamics"><b>DYNAMICS</b></a>
 						<a href="#" data-filter=".muscle-mechanics"><b>MUSCLE MECHANICS</b></a>
-						<a href="#" data-filter=".motor-control"><b>MOTOR CONTROL</b></a>
+                        <a href="#" data-filter=".machine-learning"><b>MACHINE LEARNING</b></a>
+                        <a href="#" data-filter=".motor-control"><b>MOTOR CONTROL</b></a>
+						<a href="#" data-filter=".control-theory"><b>CONTROL THEORY</b></a>
 						<a href="#" data-filter=".conference-poster"><b>CONFERENCE POSTERS</b></a>
 					</div><!-- portfolioFilter -->
 				</div><!-- col-sm-8 -->
@@ -161,161 +163,175 @@
 		</div><!-- container -->
 		<div class="portfolioContainer">
 
-			<div class="p-item kinematics dynamics muscle-mechanics" id="figure13">
+            <div class="p-item machine-learning motor-control" id="figure14">
+				<div class="image">
+					<a  href="images/ANN_setup_2.png" data-fluidbox>
+						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/ANN_setup_2.png" alt="" >
+					</a>
+				</div>
+				<div class="middle banner14">
+					<div class="text">
+						insideOut: Predicting Joint Angle from Sensor Data
+					</div>
+				</div>
+			</div><!-- p-item -->
+
+            <div class="p-item dynamics control-theory motor-control" id="figure13">
+				<div class="image">
+					<a href="images/all_states_and_inputs_01.png" data-fluidbox>
+						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/all_states_and_inputs_01.png" alt="" >
+					</a>
+				</div>
+				<div class="middle banner13">
+					<div class="text">
+						Using Feedback Linearization on Tendon-driven Systems to Control Joint Angle and Stiffness
+					</div>
+				</div>
+			</div><!-- p-item -->
+
+            <div class="p-item kinematics motor-control muscle-mechanics" id="figure12">
+				<div class="image">
+					<a href="images/MA_eqn_1.png" data-fluidbox>
+						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/MA_eqn_1.png" alt="" >
+					</a>
+				</div>
+				<div class="middle banner12">
+					<div class="text">
+						Deriving a Better Musculotendon Excursion Equation
+					</div>
+				</div>
+			</div><!-- p-item -->
+
+            <div class="p-item dynamics motor-control muscle-mechanics" id="figure11">
+				<div class="image">
+					<a href="images/IB_explanation_JOB.png" data-fluidbox>
+						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/IB_explanation_JOB.png" alt="" >
+					</a>
+				</div>
+				<div class="middle banner11">
+					<div class="text">
+						Controlling Tendon-driven Systems with Integrator Backstepping Algorithm
+					</div>
+				</div>
+			</div><!-- p-item -->
+
+			<div class="p-item kinematics dynamics muscle-mechanics" id="figure10">
 				<div class="image">
 					<a href="images/Iso_MVC_v2.png" data-fluidbox>
 						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/Iso_MVC_v2.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner13">
+				<div class="middle banner10">
 					<div class="text">
 						Percent Error from Assuming Inextensible Tendons During Isometric Task
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item kinematics dynamics muscle-mechanics" id="figure12">
+			<div class="p-item kinematics dynamics muscle-mechanics" id="figure9">
 				<div class="image">
 					<a href="images/C1_contour_2.png" data-fluidbox>
 						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/C1_contour_2.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner12">
+				<div class="middle banner9">
 					<div class="text">
 						Percent Error from Assuming Constant Pennation During Isometric Task
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item kinematics dynamics muscle-mechanics conference-poster" id="figure11">
+			<div class="p-item kinematics dynamics muscle-mechanics conference-poster" id="figure8">
 				<div class="image">
 					<a href="images/SIAMDS2019_DanielHagen_v1_EXPANDED.png" data-fluidbox>
 						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/SIAMDS2019_DanielHagen_v1_EXPANDED.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner11">
+				<div class="middle banner8">
 					<div class="text">
 						SIAM DS 2019
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item dynamics motor-control muscle-mechanics" id="figure10">
+			<div class="p-item dynamics motor-control muscle-mechanics" id="figure7">
 				<div class="image">
 					<a href="images/ControlProblemFormulation.png" data-fluidbox>
 						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/ControlProblemFormulation.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner10">
+				<div class="middle banner7">
 					<div class="text">
 						The Motor Control Problem
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item kinematics conference-poster" id="figure9">
+			<div class="p-item kinematics conference-poster" id="figur7">
 				<div class="image">
 					<a href="images/Grodins2018_DanielHagen_v2_EXPANDED.png" data-fluidbox>
 						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/Grodins2018_DanielHagen_v2_EXPANDED.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner9">
+				<div class="middle banne7">
 					<div class="text">
 						Grodins 2018
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item kinematics" id="figure8">
+			<div class="p-item kinematics" id="figure5">
 				<div class="image">
 					<a href="images/Figure3_v6.png" data-fluidbox>
 						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/Figure3_v6.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner8">
+				<div class="middle banner5">
 					<div class="text">
 						Similar Movements Induce Different Musculotendon Velocities
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item dynamics motor-control" id="figure7">
+			<div class="p-item dynamics control-theory motor-control" id="figure4">
 				<div class="image">
-					<a href="images/Corrected_Error_Function_Proof.jpeg" data-fluidbox>
-						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/Corrected_Error_Function_Proof.jpeg" alt="" >
+					<a href="images/IB_different_activations.png" data-fluidbox>
+						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/IB_different_activations.png" alt="" >
 					</a>
 				</div>
-				<div class="middle banner7">
+				<div class="middle banner4">
 					<div class="text">
-						Kinematically-Derived Muscle Length Error
+						Visualizing Kinematically-Derived Muscle Length Error
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item dynamics motor-control muscle-mechanics" id="figure6">
+			<div class="p-item dynamics motor-control muscle-mechanics" id="figure3">
 				<div class="image">
 					<a href="images/Muscle_forced_pendulum.PNG" data-fluidbox>
 						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/Muscle_forced_pendulum.PNG" alt="" >
 					</a>
 				</div>
-				<div class="middle banner6">
+				<div class="middle banner3">
 					<div class="text">
 						Controlling a Physical Pendulum w. Muscles
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item kinematics" id="figure5">
+			<div class="p-item kinematics" id="figure2">
 				<div class="image">
 					<a href="images/ArmSkeletonFigure_v2.png" data-fluidbox>
 						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/ArmSkeletonFigure_v2.png" alt="">
 					</a>
 				</div>
-				<div class="middle banner5">
+				<div class="middle banner2">
 					<div class="text">
 						Muscle Moment Arms During a Basketball Free Throw
 					</div>
 				</div>
 			</div><!-- p-item -->
 
-			<div class="p-item motor-control muscle-mechanics" id="figure4">
-				<div class="image">
-					<a href="images/UpperLimbAmputeeMusclesAttachments.png" data-fluidbox>
-						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/UpperLimbAmputeeMusclesAttachments.png" alt="" >
-					</a>
-				</div>
-				<div class="middle banner4">
-					<div class="text">
-						Recovering Afferented Signals After Amputation
-					</div>
-				</div>
-			</div><!-- p-item -->
-
-			<div class="p-item kinematics dynamics muscle-mechanics motor-control" id="figure3">
-				<div class="image">
-					<a href="images/ReachingTaskFigures.png" data-fluidbox>
-						<img style="padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/ReachingTaskFigures.png" alt="" >
-					</a>
-				</div>
-				<div class="middle banner3">
-					<div class="text">
-						Finding Patient-Specific Reaching Direction Deficiencies
-					</div>
-				</div>
-			</div><!-- p-item -->
-
-			<div class="p-item dynamics muscle-mechanics motor-control" id="figure2">
-				<div class="image">
-					<a  href="images/AnatomicalAfferentedMuscleModel.png" data-fluidbox>
-						<img style="padding: 0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/AnatomicalAfferentedMuscleModel.png" alt="" >
-					</a>
-				</div>
-				<div class="middle banner2">
-					<div class="text">
-						Building an Afferented Muscle Model w. Spinal Cord
-					</div>
-				</div>
-			</div><!-- p-item -->
 
 			<div class="p-item kinematics conference-poster test" id="figure1">
 				<div class="image">
@@ -344,7 +360,13 @@
 					</div>
 				</div><!-- col-sm-4 -->
 				<div class="col-sm-8">
-					<p class="margin-b-50">I've always enjoyed the little sticker on mall or amusement park maps that say "YOU ARE HERE". There is something so serenely true about that statement. You truly are where you are at any given moment, not just geographically but also mentally, emotionally, and professionally as well. I am exactly where I am today because of a series of adventures that all brought me back to biomedical engineering. From studying Mathematics in college as a Pre-Med student, to completely changing my career choice and starting my own catering company in Los Angeles for 5 years, to finally finding my calling as a scientist working towards understanding movement and developing novel robotic/prosthetic devices, I am where I am today because that's exactly where I am! Tomorrow? Thats another story...</p>
+					<p class="margin-b-50">
+                        <!-- I've always enjoyed the little sticker on mall or amusement park maps that say "YOU ARE HERE". There is something so serenely true about that statement. You truly are where you are at any given moment, not just geographically but also mentally, emotionally, and professionally as well. I am exactly where I am today because of a series of adventures that all brought me back to biomedical engineering. From studying Mathematics in college as a Pre-Med student, to completely changing my career choice and starting my own catering company in Los Angeles for 5 years, to finally finding my calling as a scientist working towards understanding movement and developing novel robotic/prosthetic devices, I am where I am today because that's exactly where I am! Tomorrow? Thats another story... -->
+                        I like making stuff.</br></br>
+                        Lego? Yup... Food? Oh yeah!.. But what I like making the most -- anything that helps!</br></br>
+                        After spending 5 amazing years making fun and creative dishes for clients as a chef in my own catering company, I pivoted to start a career as a scientist where I hope to build devices, programs, and collaborations that will help those in need.</br></br>
+                        Pretty logical career path, right? Well I became inspired by the work being done by scientist like Dr. Hugh Herr and thought I might be able to bring my passion for math and my desire to build to the Biomedical Engineering. Over the last 4 years, I I learned a lot about biomechanics, motor control, control theory and neuroscience, but I also made a lot as well. I've built numeruous computer programs, some for research and some just because I wanted to build. If I thought it would help, I wanted to build it. Now that my PhD is coming to a close, I want to find a place where I can help build something truly helpful.     
+                    </p>
 
 					<div class="row">
 						<div class="col-sm-6 col-md-6 col-lg-3">
