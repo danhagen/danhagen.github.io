@@ -76,7 +76,7 @@
 <p>Consolidated trials for plant parameter sweep</p>
 <h2 id="parameters">Parameters</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>params <span class="op">=</span> {</span>
-<span id="cb1-2"><a href="#cb1-2"></a>    <span class="st">&#39;Number of Trials&#39;</span> : <span class="dv">45</span>,</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="st">&#39;Number of Trials&#39;</span> : <span class="dv">50</span>,</span>
 <span id="cb1-3"><a href="#cb1-3"></a>    <span class="st">&#39;Babbling Duration&#39;</span> : <span class="dv">15</span>,</span>
 <span id="cb1-4"><a href="#cb1-4"></a>    <span class="st">&#39;Number of Nodes&#39;</span> : <span class="dv">15</span>,</span>
 <span id="cb1-5"><a href="#cb1-5"></a>    <span class="st">&#39;metrics&#39;</span> : [<span class="st">&#39;MAE&#39;</span>],</span>
@@ -85,33 +85,32 @@
 <span id="cb1-8"><a href="#cb1-8"></a>}</span></code></pre></div>
 <h2 id="figures">Figures</h2>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-01.png"></br> <small>Figure 1: Caption for plant_parameter_sweep_MAE_01-01.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-07.png"></br> <small>Figure 1: Heatmap representation of the average <em>logarithmic</em> mean absolute errors for each of the four sensory groups (<em>columns</em>) across all four generalization experiments (<em>rows</em>). It should be noted that sensory sets that include tendon tension (i.e., the set of all available states and the <em>bio-inspired</em> set), will perform 2-3 orders of magnitude better than the kinematic sets across all tendon stiffness and motor damping settings with an apparent inverse relationship between tendon stiffness and performance. For all groups there appears to be no relationship between motor damping and performance. </small>
 </p>
 <p></br> </br></p>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-02.png"></br> <small>Figure 2: Caption for plant_parameter_sweep_MAE_01-02.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-03.png"></br> <small>Figure 2: Average <em>logarithmic</em> performance (mean absolute error) for each of the four sensory groups (<em>columns</em>) across all four generalization experiments (<em>rows</em>) with respect to tendon stiffness (<em>x-axis</em>) and motor damping (<em>see legend</em>). Contrary to our hypothesis that the kinematic sets (<em>right two columns</em>) would increase their performance as tendon stiffness increased, we instead see that the sets that include tendon tension (<em>left two columns</em>) decrease their performance when the tendons become stiffer. However, they do not degrade to a level worse than the kinematic sets. This may be due to tendon tension information becoming less useful or <em>unique</em> as the tendons become more stiff, causing the neural networks to reduce the dimension of useful information and therefore performance. Interestingly, performance does not appear to be affected by the choice of motor damping. </small>
 </p>
 <p></br> </br></p>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-03.png"></br> <small>Figure 3: Caption for plant_parameter_sweep_MAE_01-03.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-06.png"></br> <small>Figure 3: Average <em>logarithmic</em> performance (mean absolute error) for each of the four sensory groups (<em>columns</em>) across all four generalization experiments (<em>rows</em>) with respect to motor damping (<em>x-axis</em>) and tendon stiffness (<em>see legend</em>). Interestingly, performance does not appear to be affected by the choice of motor damping, although there may exist a slight positive correlation between motor damping and the performance of networks trained on the set of all motor states (i.e., a slight downward slope for the plots in the final column). This  may be because the kinematic data associated with motor acceleration becomes more useful as the motors become more damped. Secondly, as seen in Figure 2 we again see that the sets that include tendon tension (<em>left two columns</em>) decrease their performance when the tendons become stiffer. However, they do not degrade to a level worse than the kinematic sets. This may be due to tendon tension information becoming less useful or <em>unique</em> as the tendons become more stiff, causing the neural networks to reduce the dimension of useful information and therefore performance. </small>
 </p>
 <p></br> </br></p>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-04.png"></br> <small>Figure 4: Caption for plant_parameter_sweep_MAE_01-04.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-01.png"></br> <small>Figure 4: Linear scale version of Figure 2. It is difficult to see the trends associated with the tendon tension sets (<em>left two columns</em>), but this plot does assist in visualizing the correlation between performance and motor damping for neural networks trained on the set of all motor states (<em>far right column</em>).</small>
 </p>
 <p></br> </br></p>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-05.png"></br> <small>Figure 5: Caption for plant_parameter_sweep_MAE_01-05.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-02.png"></br> <small>Figure 5: Linear scale version of Figure 2 with standard deviation bars.</small>
 </p>
 <p></br> </br></p>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-06.png"></br> <small>Figure 6: Caption for plant_parameter_sweep_MAE_01-06.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-04.png"></br> <small>Figure 6: Linear scale version of Figure 3. It is difficult to see the trends associated with the tendon tension sets (<em>left two columns</em>), but this plot does assist in visualizing the correlation between performance and motor damping for neural networks trained on the set of all motor states (<em>far right column</em>).</small>
 </p>
 <p></br> </br></p>
 <p align="center">
-<img width="1000" src="plant_parameter_sweep_MAE_01-07.png"></br> <small>Figure 7: Caption for plant_parameter_sweep_MAE_01-07.png.</small>
+<img width="1000" src="plant_parameter_sweep_MAE_01-05.png"></br> <small>Figure 7: Linear scale version of Figure 2 with standard deviation bars.</small>
 </p>
 <p></br> </br></p>
-
 	</article>
 </body>
