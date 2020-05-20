@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Code Progress</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+    <link rel="icon" href="https://daniel8hagen.com/index_files/code_ico.ico">
+    <link rel="apple-touch-icon" href="https://daniel8hagen.com/index_files/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="markdown-body">
+<ul><li><a href='https://danhagen.github.io/temp/2020_05_20_143152/'>Return to Main Page.</a></li></ul>
+
+<h1 id="readme.md-for-figures-created-on-20200518-at-1952.05-pst.">README.md for Figures Created on 2020/05/18 at 19:52.05 PST.</h1>
+<h2 id="notes">Notes</h2>
+<p>(Add Notes Here.)</p>
+<h2 id="parameters">Parameters</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>params <span class="op">=</span> {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="st">&#39;Joint Inertia&#39;</span> : <span class="fl">0.0115</span>,</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="st">&#39;Joint Damping&#39;</span> : <span class="fl">0.0001</span>,</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="st">&#39;Joint Mass&#39;</span> : <span class="fl">0.541</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="st">&#39;Joint Moment Arm&#39;</span> : <span class="fl">0.05</span>,</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="st">&#39;Link Center of Mass&#39;</span> : <span class="fl">0.085</span>,</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="st">&#39;Link Length&#39;</span> : <span class="fl">0.3</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="st">&#39;Motor Inertia&#39;</span> : <span class="fl">6.6e-05</span>,</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="st">&#39;Motor Damping&#39;</span> : <span class="fl">0.00462</span>,</span>
+<span id="cb1-10"><a href="#cb1-10"></a>    <span class="st">&#39;Motor Moment Arm&#39;</span> : <span class="fl">0.02</span>,</span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="st">&#39;Spring Stiffness Coefficient&#39;</span> : <span class="fl">2.0</span>,</span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="st">&#39;Spring Shape Coefficient&#39;</span> : <span class="dv">1000</span>,</span>
+<span id="cb1-13"><a href="#cb1-13"></a>    <span class="st">&#39;Simulation Duration&#39;</span> : <span class="dv">15</span>,</span>
+<span id="cb1-14"><a href="#cb1-14"></a>    <span class="st">&#39;dt&#39;</span> : <span class="fl">0.001</span>,</span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="st">&#39;Position Gains&#39;</span> : {<span class="dv">0</span>: <span class="fl">3162.3</span>, <span class="dv">1</span>: <span class="fl">1101.9</span>, <span class="dv">2</span>: <span class="fl">192.0</span>, <span class="dv">3</span>: <span class="fl">19.6</span>},</span>
+<span id="cb1-16"><a href="#cb1-16"></a>    <span class="st">&#39;Stiffness Gains&#39;</span> : {<span class="dv">0</span>: <span class="fl">316.2</span>, <span class="dv">1</span>: <span class="fl">25.1</span>},</span>
+<span id="cb1-17"><a href="#cb1-17"></a>    <span class="st">&#39;Joint Angle Bounds&#39;</span> : {<span class="st">&#39;LB&#39;</span>: <span class="fl">1.5707963267948966</span>, <span class="st">&#39;UB&#39;</span>: <span class="fl">4.71238898038469</span>},</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="st">&#39;Maximum Joint Stiffness&#39;</span> : <span class="dv">650</span>,</span>
+<span id="cb1-19"><a href="#cb1-19"></a>    <span class="st">&#39;Seed&#39;</span> : <span class="va">None</span>,</span>
+<span id="cb1-20"><a href="#cb1-20"></a>    <span class="st">&#39;Filter Length&#39;</span> : <span class="dv">10</span>,</span>
+<span id="cb1-21"><a href="#cb1-21"></a>    <span class="st">&#39;Pass Probability&#39;</span> : <span class="fl">0.00025</span>,</span>
+<span id="cb1-22"><a href="#cb1-22"></a>    <span class="st">&#39;Input Bounds&#39;</span> : [<span class="dv">0</span>, <span class="dv">10</span>],</span>
+<span id="cb1-23"><a href="#cb1-23"></a>    <span class="st">&#39;Low Cutoff Frequency&#39;</span> : <span class="dv">1</span>,</span>
+<span id="cb1-24"><a href="#cb1-24"></a>    <span class="st">&#39;High Cutoff Frequency&#39;</span> : <span class="dv">10</span>,</span>
+<span id="cb1-25"><a href="#cb1-25"></a>    <span class="st">&#39;Buttersworth Filter Order&#39;</span> : <span class="dv">9</span>,</span>
+<span id="cb1-26"><a href="#cb1-26"></a>    <span class="st">&#39;Babbling Type&#39;</span> : <span class="st">&#39;continuous&#39;</span>,</span>
+<span id="cb1-27"><a href="#cb1-27"></a>    <span class="st">&#39;Force Cocontraction&#39;</span> : <span class="va">True</span>,</span>
+<span id="cb1-28"><a href="#cb1-28"></a>    <span class="st">&#39;Cocontraction Standard Deviation&#39;</span> : <span class="fl">0.5</span>,</span>
+<span id="cb1-29"><a href="#cb1-29"></a>    <span class="st">&#39;Number of Nodes&#39;</span> : <span class="dv">15</span>,</span>
+<span id="cb1-30"><a href="#cb1-30"></a>    <span class="st">&#39;Number of Epochs&#39;</span> : <span class="dv">10000</span>,</span>
+<span id="cb1-31"><a href="#cb1-31"></a>    <span class="st">&#39;Number of Trials&#39;</span> : <span class="dv">45</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a>}</span></code></pre></div>
+<h2 id="figures">Figures</h2>
+<p align="center">
+<img width="1000" src="continuous_01-01.png"></br> <small>Figure 1: Caption for continuous_01-01.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-02.png"></br> <small>Figure 2: Caption for continuous_01-02.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-03.png"></br> <small>Figure 3: Caption for continuous_01-03.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-04.png"></br> <small>Figure 4: Caption for continuous_01-04.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-05.png"></br> <small>Figure 5: Caption for continuous_01-05.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-06.png"></br> <small>Figure 6: Caption for continuous_01-06.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-07.png"></br> <small>Figure 7: Caption for continuous_01-07.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-08.png"></br> <small>Figure 8: Caption for continuous_01-08.png.</small>
+</p>
+<p></br> </br></p>
+<p align="center">
+<img width="1000" src="continuous_01-09.png"></br> <small>Figure 9: Caption for continuous_01-09.png.</small>
+</p>
+<p></br> </br></p>
+<h1 id="appended-on-20200518-at-1955.19-pst.">Appended on 2020/05/18 at 19:55.19 PST.</h1>
+<h2 id="notes-1">Notes</h2>
+<p>(Add Notes Here.)</p>
+<h2 id="parameters-1">Parameters</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>params <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="st">&#39;Joint Inertia&#39;</span> : <span class="fl">0.0115</span>,</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="st">&#39;Joint Damping&#39;</span> : <span class="fl">0.0001</span>,</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="st">&#39;Joint Mass&#39;</span> : <span class="fl">0.541</span>,</span>
+<span id="cb2-5"><a href="#cb2-5"></a>    <span class="st">&#39;Joint Moment Arm&#39;</span> : <span class="fl">0.05</span>,</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="st">&#39;Link Center of Mass&#39;</span> : <span class="fl">0.085</span>,</span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="st">&#39;Link Length&#39;</span> : <span class="fl">0.3</span>,</span>
+<span id="cb2-8"><a href="#cb2-8"></a>    <span class="st">&#39;Motor Inertia&#39;</span> : <span class="fl">6.6e-05</span>,</span>
+<span id="cb2-9"><a href="#cb2-9"></a>    <span class="st">&#39;Motor Damping&#39;</span> : <span class="fl">0.00462</span>,</span>
+<span id="cb2-10"><a href="#cb2-10"></a>    <span class="st">&#39;Motor Moment Arm&#39;</span> : <span class="fl">0.02</span>,</span>
+<span id="cb2-11"><a href="#cb2-11"></a>    <span class="st">&#39;Spring Stiffness Coefficient&#39;</span> : <span class="fl">2.0</span>,</span>
+<span id="cb2-12"><a href="#cb2-12"></a>    <span class="st">&#39;Spring Shape Coefficient&#39;</span> : <span class="dv">1000</span>,</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="st">&#39;Simulation Duration&#39;</span> : <span class="dv">15</span>,</span>
+<span id="cb2-14"><a href="#cb2-14"></a>    <span class="st">&#39;dt&#39;</span> : <span class="fl">0.001</span>,</span>
+<span id="cb2-15"><a href="#cb2-15"></a>    <span class="st">&#39;Position Gains&#39;</span> : {<span class="dv">0</span>: <span class="fl">3162.3</span>, <span class="dv">1</span>: <span class="fl">1101.9</span>, <span class="dv">2</span>: <span class="fl">192.0</span>, <span class="dv">3</span>: <span class="fl">19.6</span>},</span>
+<span id="cb2-16"><a href="#cb2-16"></a>    <span class="st">&#39;Stiffness Gains&#39;</span> : {<span class="dv">0</span>: <span class="fl">316.2</span>, <span class="dv">1</span>: <span class="fl">25.1</span>},</span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="st">&#39;Joint Angle Bounds&#39;</span> : {<span class="st">&#39;LB&#39;</span>: <span class="fl">1.5707963267948966</span>, <span class="st">&#39;UB&#39;</span>: <span class="fl">4.71238898038469</span>},</span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="st">&#39;Maximum Joint Stiffness&#39;</span> : <span class="dv">650</span>,</span>
+<span id="cb2-19"><a href="#cb2-19"></a>    <span class="st">&#39;Seed&#39;</span> : <span class="va">None</span>,</span>
+<span id="cb2-20"><a href="#cb2-20"></a>    <span class="st">&#39;Filter Length&#39;</span> : <span class="dv">10</span>,</span>
+<span id="cb2-21"><a href="#cb2-21"></a>    <span class="st">&#39;Pass Probability&#39;</span> : <span class="fl">0.00025</span>,</span>
+<span id="cb2-22"><a href="#cb2-22"></a>    <span class="st">&#39;Input Bounds&#39;</span> : [<span class="dv">0</span>, <span class="dv">10</span>],</span>
+<span id="cb2-23"><a href="#cb2-23"></a>    <span class="st">&#39;Low Cutoff Frequency&#39;</span> : <span class="dv">1</span>,</span>
+<span id="cb2-24"><a href="#cb2-24"></a>    <span class="st">&#39;High Cutoff Frequency&#39;</span> : <span class="dv">10</span>,</span>
+<span id="cb2-25"><a href="#cb2-25"></a>    <span class="st">&#39;Buttersworth Filter Order&#39;</span> : <span class="dv">9</span>,</span>
+<span id="cb2-26"><a href="#cb2-26"></a>    <span class="st">&#39;Babbling Type&#39;</span> : <span class="st">&#39;continuous&#39;</span>,</span>
+<span id="cb2-27"><a href="#cb2-27"></a>    <span class="st">&#39;Force Cocontraction&#39;</span> : <span class="va">True</span>,</span>
+<span id="cb2-28"><a href="#cb2-28"></a>    <span class="st">&#39;Cocontraction Standard Deviation&#39;</span> : <span class="fl">0.5</span>,</span>
+<span id="cb2-29"><a href="#cb2-29"></a>    <span class="st">&#39;Number of Nodes&#39;</span> : <span class="dv">15</span>,</span>
+<span id="cb2-30"><a href="#cb2-30"></a>    <span class="st">&#39;Number of Epochs&#39;</span> : <span class="dv">10000</span>,</span>
+<span id="cb2-31"><a href="#cb2-31"></a>    <span class="st">&#39;Number of Trials&#39;</span> : <span class="dv">45</span></span>
+<span id="cb2-32"><a href="#cb2-32"></a>}</span></code></pre></div>
+<h2 id="figures-1">Figures</h2>
+<p align="center">
+<img width="1000" src="training_perf_01-01.png"></br> <small>Figure 10: Caption for training_perf_01-01.png.</small>
+</p>
+<p></br> </br></p>
+
+	</article>
+</body>
