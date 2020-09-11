@@ -54,8 +54,9 @@
 	/* ---------------------------------
 	4. INTRO SECTION
 	--------------------------------- */
-    .dropbtn{width:150px;}
-    .download-btn{width:200px;}
+    .dropbtn{width:100px;}
+    .dropdown-content{width:100px;}
+    .download-btn{width:150px;}
     .intro .profile-img{ height: 200px; width: 200px;}
 
 	.intro-section{ padding-top: 350px; }
@@ -95,8 +96,9 @@
 
 	body{ font-size: 14px;  }
 
-    .dropbtn{width:150px;}
-    .download-btn{width:200px;}
+    .dropbtn{width:100px;}
+    .dropdown-content{width:100px;}
+    .download-btn{width:150px;}
     .intro .profile-img{ height: 200px; width: 200px;}
 
 	/* ---------------------------------
