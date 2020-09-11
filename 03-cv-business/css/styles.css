@@ -117,8 +117,8 @@ b.max-bold{ font-weight: 700; }
 3. INTRO SECTION
 --------------------------------- */
 
-.intro-section{ padding: 50px 0; position: relative; background-size: cover;
-	z-index: 1;background-image: url(../../images/slider-3-1920x1080.jpg); }
+.intro-section{ padding-top: 25px; position: relative; background-size: cover;
+	z-index: 1;background-image: url(../../images/blackboard-3.jpg); }
 
 .intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0;
 	right: 0; background: rgba(0,0,0, .2); }
@@ -144,7 +144,7 @@ b.max-bold{ font-weight: 700; }
 .intro .information > li{ display: block; margin: 5px 0; }
 
 .intro .social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px;
-	overflow: hidden; z-index: 1; position: relative; margin: 0 5px 5px; text-align: center;
+	overflow: hidden; z-index: 1; position: relative; margin: 0 10px 5px; text-align: center;
 	background: #887392; color: #fff; }
 
 .intro .social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
